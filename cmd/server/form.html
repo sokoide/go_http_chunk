@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        .form-container {
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            margin: 10px 0;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form method="POST" action="/">
+            <div class="input-group">
+                <label>大きなデータ (最大4000文字)</label>
+                <textarea name="largedata" maxlength="4000" placeholder="ここに大きなテキストを入力してください"></textarea>
+            </div>
+            <input type="submit" value="送信" />
+        </form>
+    </div>
+</body>
+</html>
